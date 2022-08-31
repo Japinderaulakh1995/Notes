@@ -1,0 +1,38 @@
+Volumes: objectstorage:S3 vol, 
+EBS:Elastic block storage. EC2 level storage. n/w attached storage. shares same AZ but not physically attached. persistene. Data stored in block with indexing per block. Stores metadata of data only not per block.
+    Types:
+    SSD:-GP2 & Provisioned IOPS, 
+    HDD:-Throughput opyimised(ST1) & Cold HDD (SC1)
+    Magnetic standard
+Instance store: Part of EC2 memory physically. Fast & non-persistent but could be paused.
+
+EFS: Elastic file system. Supports linux only. shared file system storage among EC2s in same region. E.g. software update file to be used by several EC2s. Security group NFS must be used for it to work.
+
+S3-bucket: object storage. 100 bucket per account. Region level.
+
+Security groups:Inbound & Outbound rules- stateful. Applied on EC2 level.
+NACL: n/w access control list. Stateless. Applied on subnet level.
+
+EC2: 20 instance per region.
+Types:7: General purpose:-balanced memory & CPU, 4 sizes: nano, small, medium, large.  3 series(A[medium,large],M[large],T[all sizes]): A1,M4,M5,M5a,M5d,M5ad,T2,T3,T3a. 
+         Compute optimized:- More CPU than RAM, C-series: c4,c5,c5n
+         Memory optimized:- More RAM, 3 series(R,X,Z): R4,R5,R5a,R5d,R5ad,x1,x1e,z1d
+         Storage optimized:- Low latency, 3 series(I,D,H) D2,H1,I3,I3en
+         Accelerated computing/GPU:- Graphics optimised, 3 series(F1,P,G):F,P2,P3,G2,G3.
+         High memory:- High RAM, Nitro system, Runs on dedicated host(runs directly on hardware without any hypervisor). U-series. could be purchased for minimum 3 years
+         Previous generation: T1,M1,C1CC2,M2,CR1,CG1,I2,HS1,M3,C3,R3
+
+Linux: how to create users & goups
+Sudo user -n Rahul
+Sudo passwd Rahul
+Sudo groupadd Students
+Sudo usernod -a -G  Students Rahul        (-a=addition, -G=group)
+Sudo chown -R :Students {folder location}
+Sudo chmod -R g+rwx Assignments
+Sudo setfacl -m g:Teachers:rwx -R {folder location}
+Getfacl {folder location} (to check permissions)
+
+IAM: IAM: 5000 user create limit. 300 groups. 1000 IAM roles. 10 policies per IAM user as well as per IAM role. 1 user could be member of 10 groups. Max 2 access key could be assigned to a user. 
+          Identity federation: access through 3rd party e.g. Facebook or google.
+          6 Components: Principal, request, authentication, authorization, action, resource. 
+          permissions & policies are assigned to roles then roles are attached to user or resources.

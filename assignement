@@ -1,0 +1,5 @@
+1/9/20202
+1. download github desktop and clone the repos in local desktop
+2. clone the same repo in the instance docker-host(https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls)
+3. study complete networking in aws in which (vpc, subnet, route table, subnet association, nat gateway internet gateway)
+4. Terrform: create a vpc and divide the cidr range into 2 subnets public and private 

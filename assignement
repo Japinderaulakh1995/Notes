@@ -4,7 +4,7 @@
 3. study complete networking in aws in which (vpc, subnet, route table, subnet association, nat gateway internet gateway)
 
 
-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
+GIT PAT key: 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
 2/9/2022
 1. Check best practices to store statefile which is backend s3 bucket and dynmodb table in aws
 2. Terrform: create a vpc and divide the cidr range into 2 subnets public and private using variable and local variable

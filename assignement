@@ -8,3 +8,9 @@ GIT PAT key: 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
 2/9/2022
 1. Check best practices to store statefile which is backend s3 bucket and dynmodb table in aws
 2. Terrform: create a vpc and divide the cidr range into 2 subnets public and private using variable and local variable
+
+4/9/2022
+1. learn endpoints and peering connection using transit gateway and customer gateway and vpn.
+2. add private subnet module into dev and call the all three modules vpc public and private into prod.tf but or prod it should have different cidr range for public and private and vpc comapring to dev.
+3. How to create dockerfile and its attributes.
+4. docker networking.

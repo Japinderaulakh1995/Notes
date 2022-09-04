@@ -1,0 +1,9 @@
+Networing creating two subnet public and private
+1.vpc create
+2. 2 subnet
+3. internet gateway (vpc id)
+4. elastic ip 
+5 nat gateway (elastic ip vpc id)
+6 2 route table 
+7 in one route table add internet gate way and attached to P>subnet
+8 add natgateway in routetable and attached to private subnet

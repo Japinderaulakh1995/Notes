@@ -14,3 +14,8 @@ GIT PAT key: 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
 2. add private subnet module into dev and call the all three modules vpc public and private into prod.tf but or prod it should have different cidr range for public and private and vpc comapring to dev.
 3. How to create dockerfile and its attributes.
 4. docker networking.
+
+launch ec2 instance, type=t2micro. use variable and local variable
+docker: diff b/w add and copy command. cmd & entrypoint command.
+create a dockerfile using redhat 8 as base image in which it has tomcat and java packages. java path sould be on /usr/java & tomcat on /usr/local/tomcat
+  
